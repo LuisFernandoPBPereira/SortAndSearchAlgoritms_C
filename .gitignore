@@ -1,0 +1,54 @@
+# Configurações específicas do usuário
+.vs/
+*.user
+*.suo
+*.userosscache
+*.userprefs
+
+# Arquivos de Build
+bin/
+obj/
+
+# Logs, Debugging e arquivos de configuração
+*.log
+*.tlog
+*.pdb
+*.ilk
+*.idb
+
+# Configurações do Visual Studio
+*.VC.db
+*.VC.opendb
+
+# Arquivos de pacote NuGet
+*.nupkg
+packages/
+project.lock.json
+*.nuget.props
+*.nuget.targets
+
+# Diretório de publicação
+publish/
+app.publish/
+
+# Arquivos de dependências gerados
+project.assets.json
+*.deps.json
+*.runtimeconfig.json
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.cache
+*.sqlite
+
+# Arquivos gerados automaticamente
+Generated\*
+ServiceFabricBackup/
+BundleArtifacts/
+
+# Outras exclusões úteis
+_ReSharper*/ 
+*.resharper
+.idea/
+*.vsconfig

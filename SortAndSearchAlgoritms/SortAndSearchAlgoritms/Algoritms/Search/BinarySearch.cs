@@ -2,9 +2,9 @@
 
 public static class BinarySearch
 {
-    public static int Execute(int[] numeros, int tamanho, int alvo)
+    public static int Execute(int[] numeros, int alvo)
     {
-        int esquerda = 0, direita = tamanho - 1;
+        int esquerda = 0, direita = numeros.Length - 1;
 
         while (esquerda <= direita)
         {

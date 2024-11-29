@@ -15,13 +15,15 @@ var ordenacaoMerge = MergeSort.Execute(numerosAleatorios);
 var ordenacaoShell = ShellSort.Execute(numerosAleatorios);
 var ordenacaoBubble = BubbleSort.Execute(numerosAleatorios);
 var ordenacaoRadix = RadixSort.Execute(numerosAleatorios);
+var ordenacaoSelection = SelectionSort.Execute(numerosAleatorios);
 
 
 //ImprimeLista(ordenacaoBucket);
 //ImprimeLista(ordenacaoMerge);
 //ImprimeLista(ordenacaoShell);
 //ImprimeLista(ordenacaoBubble);
-ImprimeLista(ordenacaoRadix);
+//ImprimeLista(ordenacaoRadix);
+ImprimeLista(ordenacaoSelection);
 
 
 //Console.WriteLine(buscaTernary);

@@ -9,6 +9,7 @@ int alvo = 6;
 var buscaBinary = BinarySearch.Execute(numerosOrdenados, alvo);
 var buscaJump = JumpSearch.Execute(numerosOrdenados, alvo);
 var buscaInterpolation = InterpolationSearch.Execute(numerosOrdenados, alvo);
+var buscaTernary = TernarySearch.Execute(numerosOrdenados, alvo);
 var ordenacaoBucket = BucketSort.Execute(numerosAleatorios2);
 var ordenacaoMerge = MergeSort.Execute(numerosAleatorios);
 var ordenacaoShell = ShellSort.Execute(numerosAleatorios);
@@ -20,7 +21,7 @@ var ordenacaoBubble = BubbleSort.Execute(numerosAleatorios);
 //ImprimeLista(ordenacaoShell);
 //ImprimeLista(ordenacaoBubble);
 
-Console.WriteLine(buscaInterpolation);
+Console.WriteLine(buscaTernary);
 
 void ImprimeLista<Number>(Number[] numeros)
 {

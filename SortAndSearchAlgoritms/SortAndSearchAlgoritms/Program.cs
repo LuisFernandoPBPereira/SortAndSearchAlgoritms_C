@@ -10,9 +10,13 @@ int resultado;
 resultado = BinarySearch.Execute(numerosOrdenados, alvo);
 var ordenacaoBucket = BucketSort.Execute(numerosAleatorios2);
 var ordenacaoMerge = MergeSort.Execute(numerosAleatorios);
+var ordenacaoShell = ShellSort.Execute(numerosAleatorios);
+var ordenacaoBubble = BubbleSort.Execute(numerosAleatorios);
 
 //ImprimeLista(ordenacaoBucket);
-ImprimeLista(ordenacaoMerge);
+//ImprimeLista(ordenacaoMerge);
+//ImprimeLista(ordenacaoShell);
+ImprimeLista(ordenacaoBubble);
 
 void ImprimeLista<Number>(Number[] numeros)
 {

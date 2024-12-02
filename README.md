@@ -79,11 +79,17 @@
    - Adapte os algoritmos de ordenação (Merge Sort e Quick Sort) para ordenar palavras em ordem alfabética.
    - Utilize Binary Search para verificar se uma palavra específica está presente em uma lista de palavras ordenadas.
 
+[Busca e Ordenação em Strings](https://github.com/LuisFernandoPBPereira/SortAndSearchAlgoritms_CSharp/tree/main/SortAndSearchAlgoritms/BuscaEOrdenacaoStrings)
+
 ## 16. Aplicação Prática de Busca
    - Use o Binary Search para procurar um livro específico por ISBN em uma lista ordenada de registros de biblioteca.
 
+[Buscar Livro por ISBN](https://github.com/LuisFernandoPBPereira/SortAndSearchAlgoritms_CSharp/tree/main/SortAndSearchAlgoritms/BinarySearchNaPratica)
+
 ## 17. Busca e Ordenação em Dados Reais
    - Implemente Bucket Sort para ordenar as notas de uma turma de alunos, classificadas entre 0 e 100. Em seguida, utilize o Interpolation Search para encontrar um aluno com uma nota específica.
+
+[Ordenar e Buscar Alunos por Nota](https://github.com/LuisFernandoPBPereira/SortAndSearchAlgoritms_CSharp/tree/main/SortAndSearchAlgoritms/OrdenarNotas)
 
 ## 18. Ordenação Estável e Instável
    - Identifique quais algoritmos de ordenação da lista são estáveis e explique o que isso significa. Demonstre com exemplos.
@@ -93,3 +99,5 @@
 
 ## 20. Desafios de Implementação
    - Crie um programa que permita ao usuário escolher um algoritmo de busca e ordenação para ordenar uma lista ou procurar um elemento, oferecendo comparações automáticas entre os métodos.
+
+[Todos Algoritmos Implementados](https://github.com/LuisFernandoPBPereira/SortAndSearchAlgoritms_CSharp/tree/main/SortAndSearchAlgoritms/SortAndSearchAlgoritms/Algoritms)

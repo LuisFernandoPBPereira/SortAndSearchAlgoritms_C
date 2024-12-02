@@ -163,7 +163,7 @@ void EscolherOrdenacao()
         int operacaoOrdenacao = 0;
 
         Console.WriteLine("Digite a Ordenação desejada:");
-        Console.Write("1 - Bucket Sort\n2 - Merge Sort\n3 - Shell Sort\n4 - Bubble Sort\n5 - Radix Sort\n6 - Selection Sort\nOrdenação: ");
+        Console.Write("1 - Bucket Sort\n2 - Merge Sort\n3 - Shell Sort\n4 - Bubble Sort\n5 - Radix Sort\n6 - Selection Sort\n7 - Quick Sort\nOrdenação: ");
         operacaoOrdenacao = int.Parse(Console.ReadLine()!);
         Console.Clear();
 
@@ -200,6 +200,12 @@ void EscolherOrdenacao()
                 var ordenacaoSelection = SelectionSort.Execute(numerosAleatorios);
                 ImprimeLista(ordenacaoSelection);
                 break;
+            case EOrdenacao.QuickSort:
+                InsereItens(numerosAleatorios);
+                var ordenacaoQuick = QuickSort.Execute(numerosAleatorios);
+                ImprimeLista(ordenacaoQuick);
+                break;
+
         }
     }
     catch (Exception exception)

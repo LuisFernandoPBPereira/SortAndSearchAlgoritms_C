@@ -5,5 +5,6 @@
     ShellSort,
     BubbleSort,
     RadixSort,
-    SelectionSort
+    SelectionSort,
+    QuickSort
 }

@@ -4,11 +4,20 @@
    - Implemente o algoritmo Binary Search em uma lista ordenada e encontre o índice de um elemento dado.
    - Explique por que a lista deve estar ordenada para que o Binary Search funcione corretamente. Forneça exemplos.
 
+### Resposta
+A lista precisa estar ordenada, pois, ao dividirmos a lista pela metade, podemos saber em qual das metades o número a ser busca está.
+Exemplos:
+- `[1, 2, 3, 4, 5, 6, 7, 8, 9]`
+- `[9, 8, 7, 6, 5, 4, 3, 2, 1]`
+
 [Binary Search Implementado](https://github.com/LuisFernandoPBPereira/SortAndSearchAlgoritms_CSharp/blob/main/SortAndSearchAlgoritms/SortAndSearchAlgoritms/Algoritms/Search/BinarySearch.cs)
 
 ## 2. Interpolation Search  
    - Crie uma função que implemente o Interpolation Search e teste-a em listas ordenadas com intervalos uniformes e não uniformes. Compare com o Binary Search.
    - Identifique casos em que o Interpolation Search é mais eficiente que o Binary Search.
+
+### Resposta
+Interpolation Search é mais eficiente para busca frequente em dados quase uniformes, listas grandes e para distribuição uniforme de dados.
 
 [Interpolation Search Implementado](https://github.com/LuisFernandoPBPereira/SortAndSearchAlgoritms_CSharp/blob/main/SortAndSearchAlgoritms/SortAndSearchAlgoritms/Algoritms/Search/InterpolationSearch.cs)
 
@@ -16,11 +25,22 @@
    - Desenvolva o algoritmo Jump Search e determine o tamanho ideal do "salto" para uma lista de tamanho 
    - Compare o tempo de execução do Jump Search com o Binary Search em listas de diferentes tamanhos.
 
+### Resposta
+
+| **Algoritmo**   | **1000 Elementos** | **10.000 Elementos** | **100.000 Elementos** |
+|------------------|--------------------|-----------------------|------------------------|
+| **Jump Search**  | 0.0002673s        | 0.0003305s           | 0.0005575s            |
+| **Binary Search**| 0.0002901s        | 0.0002614s           | 0.0003292s            |
+
+
 [Jump Search Implementado](https://github.com/LuisFernandoPBPereira/SortAndSearchAlgoritms_CSharp/blob/main/SortAndSearchAlgoritms/SortAndSearchAlgoritms/Algoritms/Search/JumpSearch.cs)
 
 ## 4. Exponential Search
    - Implemente o algoritmo Exponential Search para localizar um elemento em uma lista ordenada. Explique como ele combina elementos do Jump Search e Binary Search.
    - Analise o desempenho do Exponential Search em listas muito grandes e pequenas.
+
+### Resposta
+
 
 [Exponential Search Implementado](https://github.com/LuisFernandoPBPereira/SortAndSearchAlgoritms_CSharp/blob/main/SortAndSearchAlgoritms/SortAndSearchAlgoritms/Algoritms/Search/ExponentialSearch.cs)
 

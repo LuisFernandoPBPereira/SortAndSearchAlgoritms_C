@@ -2,16 +2,16 @@
 
 try
 {
-    BuscarLirvo();
+    BuscarLivro();
 }
 catch (Exception exception)
 {
     Console.Clear();
     Console.WriteLine(exception.Message);
-    BuscarLirvo();
+    BuscarLivro();
 }
 
-void BuscarLirvo()
+void BuscarLivro()
 {
     try
     {
@@ -40,6 +40,6 @@ void BuscarLirvo()
     {
         Console.Clear();
         Console.WriteLine(exception.Message);
-        BuscarLirvo();
+        BuscarLivro();
     }
 }

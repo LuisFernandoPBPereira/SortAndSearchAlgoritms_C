@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuscaEOrdenacaoStrings", "B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchNaPratica", "BinarySearchNaPratica\BinarySearchNaPratica.csproj", "{05EF47FB-1C6B-49F8-937A-F63176D5F101}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdenarNotas", "OrdenarNotas\OrdenarNotas.csproj", "{CD416547-1987-481F-80E1-BC6863E6FA7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{05EF47FB-1C6B-49F8-937A-F63176D5F101}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05EF47FB-1C6B-49F8-937A-F63176D5F101}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05EF47FB-1C6B-49F8-937A-F63176D5F101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD416547-1987-481F-80E1-BC6863E6FA7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD416547-1987-481F-80E1-BC6863E6FA7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD416547-1987-481F-80E1-BC6863E6FA7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD416547-1987-481F-80E1-BC6863E6FA7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

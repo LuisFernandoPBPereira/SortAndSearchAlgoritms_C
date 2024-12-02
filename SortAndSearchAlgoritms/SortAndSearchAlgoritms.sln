@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortAndSearchAlgoritms", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuscaEOrdenacaoStrings", "BuscaEOrdenacaoStrings\BuscaEOrdenacaoStrings.csproj", "{2BFA5D62-D75A-4D4A-8BB3-621B53DD0C20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchNaPratica", "BinarySearchNaPratica\BinarySearchNaPratica.csproj", "{05EF47FB-1C6B-49F8-937A-F63176D5F101}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2BFA5D62-D75A-4D4A-8BB3-621B53DD0C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BFA5D62-D75A-4D4A-8BB3-621B53DD0C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BFA5D62-D75A-4D4A-8BB3-621B53DD0C20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05EF47FB-1C6B-49F8-937A-F63176D5F101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05EF47FB-1C6B-49F8-937A-F63176D5F101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05EF47FB-1C6B-49F8-937A-F63176D5F101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05EF47FB-1C6B-49F8-937A-F63176D5F101}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

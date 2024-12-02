@@ -2,9 +2,9 @@
 using SortAndSearchAlgoritms.Algoritms.Sort;
 
 int[] numerosOrdenados = { 1,2,3,4,5,6,7,8,9 };
-int[] numerosAleatorios = { 5,1,65,86,41,34,0,45,32 };
-float[] numerosFloatAleatorios = { 0.78f, 0.17f, 0.39f, 0.26f, 0.72f, 0.94f, 0.21f, 0.12f, 0.23f, 0.68f };
-int alvo = 6;
+int[] numerosAleatorios = new int[10];
+float[] numerosFloatAleatorios = new float[10];
+int alvo = 0;
 int operacao = 0;
 
 try
@@ -20,27 +20,95 @@ catch (Exception exception)
 
 void Menu()
 {
-    Console.WriteLine("Digite a operação desejada:");
-    Console.Write("1 - Busca\n2 - Ordenação\n3 - Sair\nOperação: ");
-    operacao = int.Parse(Console.ReadLine()!);
-    Console.Clear();
-
-    switch ((EOperacao)operacao)
+    try
     {
-        case EOperacao.Busca:
-            EscolherBusca();
-            break;
-        case EOperacao.Ordenacao:
-            EscolherOrdenacao();
-            break;
-        case EOperacao.Sair:
-            return;
-        default:
-            Console.WriteLine("Operação inexistente...");
-            break;
-    }
+        Console.WriteLine("Digite a operação desejada:");
+        Console.Write("1 - Busca\n2 - Ordenação\n3 - Sair\nOperação: ");
+        operacao = int.Parse(Console.ReadLine()!);
+        Console.Clear();
 
-    Menu();
+        switch ((EOperacao)operacao)
+        {
+            case EOperacao.Busca:
+                EscolherBusca();
+                break;
+            case EOperacao.Ordenacao:
+                EscolherOrdenacao();
+                break;
+            case EOperacao.Sair:
+                Environment.Exit(0);
+                break;
+            default:
+                Console.WriteLine("Operação inexistente...");
+                break;
+        }
+
+        Menu();
+    }
+    catch (Exception exception)
+    {
+        Console.Clear();
+        Console.WriteLine($"Ocorreu um erro ao receber a entrada: {exception.Message}\n");
+        Menu();
+    }
+}
+
+void EscolherAlvo()
+{
+    try
+    {
+        Console.Write("Escolha um alvo entre 1 e 9 para ser buscado (será retornado o índice do elemento): ");
+        alvo = int.Parse(Console.ReadLine()!);
+
+        if(alvo < 1 || alvo > 9)
+        {
+            EscolherAlvo();
+        }
+    }
+    catch (Exception exception)
+    {
+        Console.Clear();
+        Console.WriteLine($"Ocorreu um erro ao receber a entrada: {exception.Message}\n");
+        Menu();
+    }
+}
+
+void InsereItens(int[] numeros)
+{
+    try
+    {
+        for (int i = 0; i < numeros.Length; i++)
+        {
+            Console.Write($"Digite o {i+1}º número para a lista: ");
+            int numero = int.Parse(Console.ReadLine()!);
+            numeros[i] = numero;
+        }
+    }
+    catch (Exception exception)
+    {
+        Console.Clear();
+        Console.WriteLine($"Ocorreu um erro ao receber a entrada: {exception.Message}\n");
+        Menu();
+    }
+}
+
+void InsereItensFloat(float[] numeros)
+{
+    try
+    {
+        for (int i = 0; i < numeros.Length; i++)
+        {
+            Console.Write($"Digite o {i+1}º número para a lista: ");
+            float numero = float.Parse(Console.ReadLine()!);
+            numeros[i] = numero;
+        }
+    }
+    catch (Exception exception)
+    {
+        Console.Clear();
+        Console.WriteLine($"Ocorreu um erro ao receber a entrada: {exception.Message}\n");
+        Menu();
+    }
 }
 
 void EscolherBusca()
@@ -51,6 +119,9 @@ void EscolherBusca()
         Console.WriteLine("Digite a Busca desejada:");
         Console.Write("1 - Binary Search\n2 - Jump Search\n3 - Interpolation Search\n4 - Ternary Search\nBusca: ");
         operacaoBusca = int.Parse(Console.ReadLine()!);
+        Console.Clear();
+
+        EscolherAlvo();
         Console.Clear();
 
         switch ((EBusca)operacaoBusca)
@@ -95,26 +166,33 @@ void EscolherOrdenacao()
         switch ((EOrdenacao)operacaoOrdenacao)
         {
             case EOrdenacao.BucketSort:
+                Console.WriteLine($"Digite números de 2 casas decimais entre 0 e 1");
+                InsereItensFloat(numerosFloatAleatorios);
                 var ordenacaoBucket = BucketSort.Execute(numerosFloatAleatorios);
                 ImprimeLista(ordenacaoBucket);
                 break;
             case EOrdenacao.MergeSort:
+                InsereItens(numerosAleatorios);
                 var ordenacaoMerge = MergeSort.Execute(numerosAleatorios);
                 ImprimeLista(ordenacaoMerge);
                 break;
             case EOrdenacao.ShellSort:
+                InsereItens(numerosAleatorios);
                 var ordenacaoShell = ShellSort.Execute(numerosAleatorios);
                 ImprimeLista(ordenacaoShell);
                 break;
             case EOrdenacao.BubbleSort:
+                InsereItens(numerosAleatorios);
                 var ordenacaoBubble = BubbleSort.Execute(numerosAleatorios);
                 ImprimeLista(ordenacaoBubble);
                 break;
             case EOrdenacao.RadixSort:
+                InsereItens(numerosAleatorios);
                 var ordenacaoRadix = RadixSort.Execute(numerosAleatorios);
                 ImprimeLista(ordenacaoRadix);
                 break;
             case EOrdenacao.SelectionSort:
+                InsereItens(numerosAleatorios);
                 var ordenacaoSelection = SelectionSort.Execute(numerosAleatorios);
                 ImprimeLista(ordenacaoSelection);
                 break;

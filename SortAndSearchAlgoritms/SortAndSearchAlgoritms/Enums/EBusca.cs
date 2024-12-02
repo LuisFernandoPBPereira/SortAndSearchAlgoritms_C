@@ -3,5 +3,6 @@
     BinarySearch = 1,
     JumpSearch,
     InterpolationSearch,
-    TernarySearch
+    TernarySearch,
+    ExponentialSearch
 }

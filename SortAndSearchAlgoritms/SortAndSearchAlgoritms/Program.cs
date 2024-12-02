@@ -117,7 +117,7 @@ void EscolherBusca()
     {
         int operacaoBusca = 0;
         Console.WriteLine("Digite a Busca desejada:");
-        Console.Write("1 - Binary Search\n2 - Jump Search\n3 - Interpolation Search\n4 - Ternary Search\nBusca: ");
+        Console.Write("1 - Binary Search\n2 - Jump Search\n3 - Interpolation Search\n4 - Ternary Search\n5 - ExponentialSearch\nBusca: ");
         operacaoBusca = int.Parse(Console.ReadLine()!);
         Console.Clear();
 
@@ -141,6 +141,10 @@ void EscolherBusca()
             case EBusca.TernarySearch:
                 var buscaTernary = TernarySearch.Execute(numerosOrdenados, alvo);
                 ImprimeBusca(alvo, buscaTernary);
+                break;
+            case EBusca.ExponentialSearch:
+                var buscaExponential = ExponentialSearch.Execute(numerosOrdenados, alvo);
+                ImprimeBusca(alvo, buscaExponential);
                 break;
         }
     }

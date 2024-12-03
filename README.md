@@ -166,6 +166,18 @@ Em listas desordenadas, o desempenho é pior, pois a escolha do pivô pode não 
    - Desenvolva o algoritmo Ternary Search para localizar um elemento em uma lista ordenada. Compare seu desempenho com o Binary Search.
    - Identifique situações em que o Ternary Search seria mais eficiente que o Binary Search.
 
+### Resposta
+
+#### Situações onde o Ternary Search é mais eficiente que o Binary Search
+
+- Sistemas Paralelos:
+
+O Ternary Search pode ser mais eficiente em sistemas onde múltiplos processos podem ser realizados em paralelo. As comparações dos dois pivôs podem ser feitas simultaneamente, reduzindo o tempo efetivo.
+
+- Dados de Alto Custo de Comparação:
+
+Em situações onde o custo de comparação entre elementos é baixo em relação à execução de cálculos (e.g., sistemas distribuídos), o Ternary Search pode compensar seu overhead.
+
 [Ternary Search Implementado](https://github.com/LuisFernandoPBPereira/SortAndSearchAlgoritms_CSharp/blob/main/SortAndSearchAlgoritms/SortAndSearchAlgoritms/Algoritms/Search/TernarySearch.cs)
 
 <br>

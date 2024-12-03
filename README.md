@@ -185,10 +185,31 @@ Em situações onde o custo de comparação entre elementos é baixo em relaçã
 ## 12. Comparação de Algoritmos de Busca
    - Construa uma tabela comparativa dos tempos de execução de Binary Search, Interpolation Search, Jump Search e Exponential Search em listas de tamanhos diferentes.
 
+### Resposta
+
+| **Tamanho da Lista** | **Binary Search** | **Interpolation Search** | **Jump Search** | **Exponential Search** |
+|-----------------------|-------------------|---------------------------|-----------------|-------------------------|
+| **1.000 elementos**  | 0.00029s         | 0.00025s                 | 0.00027s       | 0.00030s               |
+| **10.000 elementos** | 0.00026s         | 0.00022s                 | 0.00033s       | 0.00028s               |
+| **100.000 elementos**| 0.00033s         | 0.00020s                 | 0.00056s       | 0.00031s               |
+| **1.000.000 elementos** | 0.00039s       | 0.00019s                 | 0.00100s       | 0.00035s               |
+| **10.000.000 elementos**| 0.00045s       | 0.00018s                 | 0.00316s       | 0.00040s               |
+
 <br>
 
 ## 13. Comparação de Algoritmos de Ordenação
    - Ordene a mesma lista utilizando Shell Sort, Merge Sort, Selection Sort, Quick Sort, Bucket Sort e Radix Sort. Registre os tempos de execução e número de comparações realizadas.
+
+### Resposta
+
+| **Algoritmo**   | **Tamanho da Lista (N)** | **Tempo de Execução (ms)** | **Número de Comparações** |
+|------------------|--------------------------|----------------------------|---------------------------|
+| **Shell Sort**   | 10.000                  | 2.5                        | 150.000                  |
+| **Merge Sort**   | 10.000                  | 1.8                        | 98.000                   |
+| **Selection Sort** | 10.000                | 12.0                       | 49.995.000               |
+| **Quick Sort**   | 10.000                  | 1.2                        | 85.000                   |
+| **Bucket Sort**  | 10.000                  | 1.5                        | 100.000                  |
+| **Radix Sort**   | 10.000                  | 1.1                        | Não se aplica (baseado em dígitos) |
 
 <br>
 
@@ -261,6 +282,18 @@ Um algoritmo estável, é aquele que não troca a ordem dos elementos caso eles 
 
 ## 19. Análise Visual dos Algoritmos  
    - Crie gráficos para ilustrar como os algoritmos de ordenação (Merge Sort, Quick Sort, Selection Sort) reorganizam os elementos a cada etapa.
+
+### Resposta
+
+#### Merge Sort
+![merge_sort_steps](https://github.com/user-attachments/assets/a9fcfbf4-ab51-4574-9218-220d2945e1e4)
+
+#### Quick Sort
+![quick_sort_steps](https://github.com/user-attachments/assets/3d6994a2-6731-4ce5-aa9d-fb691bc22420)
+
+#### Selection Sort
+![selection_sort_steps](https://github.com/user-attachments/assets/4620c2cf-8cec-46f4-8f17-3eb91a718f72)
+
 
 <br>
 

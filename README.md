@@ -241,6 +241,22 @@ Em situações onde o custo de comparação entre elementos é baixo em relaçã
 ## 18. Ordenação Estável e Instável
    - Identifique quais algoritmos de ordenação da lista são estáveis e explique o que isso significa. Demonstre com exemplos.
 
+### Resposta
+
+Um algoritmo estável, é aquele que não troca a ordem dos elementos caso eles já estejam ordenados.
+
+### Estabilidade dos Algoritmos de Ordenação
+
+| **Algoritmo**     | **Estável?** | **Explicação**                                                                 |
+|--------------------|--------------|--------------------------------------------------------------------------------|
+| **Shell Sort**     | Não          | Trocas distantes podem alterar a ordem relativa de elementos iguais.          |
+| **Merge Sort**     | Sim          | Divide os dados e os combina de maneira que preserva a ordem relativa.        |
+| **Selection Sort** | Não          | Troca o menor elemento encontrado com a posição atual, sem preservar a ordem. |
+| **Bucket Sort**    | Sim          | Usa baldes (buckets) e preserva a ordem dentro de cada balde ao reordenar.    |
+| **Radix Sort**     | Sim          | Baseia-se em contagens estáveis dentro de cada dígito, preservando a ordem.   |
+| **Quick Sort**     | Não          | Partições e trocas podem alterar a ordem relativa de elementos iguais.        |
+
+
 <br>
 
 ## 19. Análise Visual dos Algoritmos  

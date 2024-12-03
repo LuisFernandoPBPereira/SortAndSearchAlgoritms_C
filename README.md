@@ -195,6 +195,25 @@ Em situações onde o custo de comparação entre elementos é baixo em relaçã
 ## 14. Análise de Complexidade
    - Analise a complexidade de tempo e espaço de cada algoritmo de busca e ordenação listados.
 
+### Resposta
+
+### Complexidade de Tempo e Espaço dos Algoritmos de Busca e Ordenação
+
+| **Algoritmo**            | **Tempo (Melhor Caso)** | **Tempo (Médio Caso)** | **Tempo (Pior Caso)** | **Espaço**                |
+|---------------------------|-------------------------|-------------------------|------------------------|---------------------------|
+| **Binary Search**         | O(1)             | O(log n)        | O(log n)       | O(1)                |
+| **Interpolation Search**  | O(1)             | O(log(log n))   | O(n)            | O(1)                |
+| **Jump Search**           | O(1)             | O($\sqrt{n}$)      | O($sqrt{n}$)     | O(1)                |
+| **Exponential Search**    | O(1)             | O(log n)        | O(log n)       | O(1)                |
+| **Shell Sort**            | O(n log n)      | O($n^{1.5}$)       | O($n^2$)          |O(1)                |
+| **Merge Sort**            | O(n log n)      | O(n log n)      | O(n log n)     | O(n)                |
+| **Selection Sort**        | O(n^2)           | O($n^2$)           | O($n^2$)          | O(1)                |
+| **Bucket Sort**           | O(n + k)         | O(n + k)         | O($n^2$)          | O(n + k)            |
+| **Radix Sort**            | O(nk)            | O(nk)            | O(nk)           | O(n + k)            |
+| **Quick Sort**            | O(n log n)      | O(n log n)      | O($n^2$)          | O(log n) (recursivo) |
+| **Ternary Search**        | O(1)             | O(log n)        | O(log n)       | O(1)                |
+
+
 <br>
 
 ## 15. Busca e Ordenação em Strings

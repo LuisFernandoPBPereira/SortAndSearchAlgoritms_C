@@ -22,6 +22,9 @@ Console.Write("Ordenação de strings com Quick Sort: ");
 ImprimeLista(listaOrdenadaQuick);
 Console.WriteLine("\n");
 
+var indice = BinarySearch.Execute(listaOrdenadaQuick, "Luis");
+Console.WriteLine($"Elemento a ser buscado com Binary Search: Luis\n\n\"Luis\" está no índice: {indice}");
+
 void ImprimeLista(string[] strings)
 {
     foreach (var item in strings)
